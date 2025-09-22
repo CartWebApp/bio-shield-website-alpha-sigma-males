@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioShield</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #c0c0c0;
+      overflow-x: hidden;
+    }
+    a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #e0e0e0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+
+   
+    header {
+      background-color: #1a140f;
+      border-bottom: 2px solid #f56709;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(253, 253, 253, 0.1);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.8rem;
+      color: #c0c0c0;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    /* Hero */
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(18,18,18,0.85), rgba(18,18,18,0.85)), url('Images/LebronJames.png') center center/cover no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #d0d0d0;
+      padding: 0 20px;
+      margin-top: 72px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      letter-spacing: 4px;
+      text-shadow: 0 0 10px rgba(192,192,192, 0.3);
+    }
+    
+
+    .lebron-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  background: url('Images/LebronJames.png') no-repeat center center;
+  background-size: 300px 300px;
+  background-position: top center;
+      opacity: 0.3;
+      z-index: 0;
+    }
+    .lebron-bg > * {
+      position: relative;
+      z-index: 1;
+    }
+
+
+    .business-products {
+      position: relative;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80') no-repeat center center;
+      background-size: cover;
+      opacity: 0.;
+    }
+    .product-intro {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+    .product-intro h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+    .product-intro p {
+      font-size: 1.1rem;
+      color: #bbb;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    .product-image {
+      margin: 40px auto;
+      text-align: center;
+    }
+    .product-image img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(192,192,192, 0.2);
+    }
+
+    .product-details {
+      text-align: left;
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .product-details h3 {
+      font-size: 1.6rem;
+      margin-bottom: 15px;
+      color: #ddd;
+    }
+    .product-details p {
+      font-size: 1rem;
+      color: #aaa;
+      line-height: 1.7;
+      margin-bottom: 25px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+      margin-top: 60px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .product-intro h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="nav-container">
+      <div class="logo">Bio Shield</div>
+      <nav>
+        <ul>
+          <li><a href="bioshield.html">Home</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" style="background: url('Images/LebronJames.png') no-repeat center center;-size: cover; opacity: 0.9;">
+    <h1>Introducing Our Next-Level Product</h1>
+  </section>
+
+  <!-- Product Intro -->
+  <section class="product-intro container">
+    <h2>Revolutionize the Way You Work</h2>
+    <p>
+      Our product tackles all flaws that Copperations of bug repellent for instance skin irritation,
+       inhailation risk like throat irritation and coughing, and being very eco-friendly while still being afforable.
+    </p>
+  </section>
+
+  <!-- Product Image -->
+  <section class="product-image container">
+    <img src="Images/Logo.png" alt="Product Image">
+  </section>
+
+  <!-- Product Details -->
+  <section class="product-details">
+    <h3>Product Highlights</h3>
+    <p>
+      Are products are very good with skin irritation we allowed it to be very smooth on skin and also ecofriendly while still being cheap.
+       Its very eco-friendly and causes less death to bees then copperations who use DEET. our product can be used on people who suffer with asthma.
+    
+    </p>
+
+    <h3>Why Choose This Product?</h3>
+    <ul>
+       <li>Less irritation and skin issues </li>
+       <li>Cheap and Afforadble</li>
+       <li>Shelf life of 2 years unopened, 6-12 months opened</li>
+       <li>We love nature and it's inhabitants, but we hate insects/bugs on us; So we formulated a product that is eco-friendly and effective</li>
+    </ul>
+
+    <br>
+
+    <h3>Before using our product!</h3>
+    <ul>
+    <li>KEEP AWAY FROM CHILDREN</li>
+    <li>Use only as directed. Misuse may result in injury or ineffective protection.</li>
+    <li>Do not apply to eyes, mouth, open wounds, or broken skin.</li>
+    <li>Avoid contact with eyes and mucous membranes. In case of contact, rinse thoroughly with water</li>
+    <li>Do not ingest. If swallowed, seek medical help or contact a Poison Control Center immediately</li>
+    <li>Not recommended for use on children under age of 3 without consulting a doctor.</li>
+    <li>If irritation, rash, or allergic reaction occurs, discontinue use and consult a physician.</li>
+    <li>Keep away from heat, sparks, open flames, and hot surfaces. No smoking near product.</li>
+    <li>Do not apply under clothing or on excessively sunburned or damaged skin.</li>
+    <li>Do not use near food, drink, or animal feed.</li>
+    <li>Store in a cool, dry place, out of direct sunlight.</li>
+    <li>Before using "BIOSHIELD please perform a skin graph test before applying on whole body to test for any signs of irritation or Alergic reaction</li> 
+    </ul>
+  </section>
+
+
+  <section class="business-products container" style="margin-top: 60px; margin-bottom: 60px;">
+    <h2 style="text-align:center; margin-bottom:32px; color: #121212;">Our Business Products</h2>
+    <div style="display: flex; justify-content: space-around; flex-wrap: wrap; gap: 32px;">
+      <div style="background:#222; border-radius:12px; padding:24px; width:300px; text-align:center; box-shadow:0 0 12px #0002;">
+        <img src="Images/biospray5000.jpg" alt="Product 1" style="max-width:100%; border-radius:8px; margin-bottom:16px;">
+        <h3>BioSpray 5000</h3>
+        <p>6 oz. High-capacity bug spray system for commercial use. Witch hazel: 83%, Picaridin: 8%, Ethanol: 6%, and Glycerin: 2% </p>
+        <p style="font-size:1.3rem; color:#f39006; font-weight:bold;">$21.99</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:24px; width:300px; text-align:center; box-shadow:0 0 12px #0002;">
+        <img src="Images/biobalm.jpg" alt="Product 2" style="max-width:100%; border-radius:8px; margin-bottom:16px;">
+        <h3>BioShield Balm</h3>
+        <p>3 oz. Eco-friendly Balm used with these ingredients:Picaridin (20%), Witch Hazel, Ethanol (95%), Glycerin, Beeswax, Coconut Oil, Lemongrass Oil, and Packaging (Tin/Jar) .</p>
+        <p style="font-size:1.3rem; color:#f39006; font-weight:bold;">$14.99</p>
+      </div>
+      <div style="background:#222; border-radius:12px; padding:24px; width:300px; text-align:center; box-shadow:0 0 12px #0002;">
+        <img src="Images/biospraymini.jpg" alt="Product 3" style="max-width:100%; border-radius:8px; margin-bottom:16px;">
+        <h3>BioSpray Mini</h3>
+        <p>3 oz. Compact bug spray small but very useful for cheaper and personal use. It Uses these Ingredients: Witch hazel: 83%, Picaridin: 8%, Ethanol: 6%, and Glycerin: 2%s</p>
+        <p style="font-size:1.3rem; color:#f39006; font-weight:bold;">$9.99</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    &copy; 2025 BioShield. All rights reserved.
+  </footer>
+</body>
+</html>

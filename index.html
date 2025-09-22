@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioShield</title>
+  <link rel="icon" href="Images/Favicon.png" type="image/x-icon" />
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background-color: #121212;
+      color: #c0c0c0;
+      overflow-x: hidden;
+    }
+    a {
+      color: #bbb;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #e0e0e0;
+    }
+
+ 
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+
+    header {
+      background-color: #000000;
+      border-bottom: 2px solid #f39006;
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(192,192,192, 0.1);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    .logo {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.8rem;
+      color: #c0c0c0;
+      letter-spacing: 3px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+    nav ul li {
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(215, 212, 209, 0.85), rgba(1, 1, 1, 0.85)), url('https://media.istockphoto.com/id/589460032/photo/getting-on-the-top.jpg?s=612x612&w=0&k=20&c=EcYYjS5IJIA9jNN1CwnCYVrVFuaoH34esOpPb76IaHU=') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      color: #faf9f8;
+      position: relative;
+      margin-top: 72px;
+    
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      letter-spacing: 5px;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(192,192,192, 0.5);
+    }
+    .hero p {
+      font-size: 1.5rem;
+      max-width: 700px;
+      margin-bottom: 40px;
+      color: #bbb;
+      text-shadow: 0 0 5px rgba(192,192,192, 0.3);
+    }
+
+
+    .btn-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .btn {
+      background-color: #fffcfc;
+      color: #121212;
+      border: none;
+      padding: 15px 40px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      box-shadow: 0 5px 15px rgba(218, 210, 210, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+    .btn-primary:hover {
+      background-color: #7e7e7e;
+      color: #f0f0f0;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      color: #c0c0c0;
+      border: 2px solid #c0c0c0;
+    }
+    .btn-secondary:hover {
+      background-color: #c0c0c0;
+      color: #121212;
+      transform: scale(1.15);
+      transition: transform 0.2s ease;
+    }
+
+  
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #010101;
+      margin-top: 60px;
+    }
+
+   
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+      .hero p {
+        font-size: 1.2rem;
+      }
+      .btn {
+        padding: 12px 30px;
+        font-size: 1rem;
+      }
+      nav ul {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">BioShield</div>
+      <nav>
+        <ul>
+          <li><a href="bioshield.html" class="home-expand">Home</a></li>
+          <li><a href="Info.html" class="home-expand">Info</a></li>
+
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="image-container">
+      <img src="Images/Favicon.png" alt="Transparent Image">
+    </div>
+    <h1>BioShield</h1>
+
+    <p>Nature's guard for nature's pests.</p>
+    <div class="btn-group">
+
+  <a href="Info.html"><button class="btn btn-secondary">Info</button></a>
+    </div>
+
+  </section>
+  <style>
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+      position: relative;
+    }
+    .home-expand {
+      display: inline-block;
+      transition: transform 0.2s ease;
+    }
+    .home-expand:hover {
+      transform: scale(1.15);
+    }
+    .image-container {
+      margin: 5px auto;
+    }
+    .image-container img {
+      max-width: 220px;
+      height: auto;
+      opacity: 0.;
+    }
+  </style>
+  <footer>
+    &copy; 2025 BioShield, all rights reserved
+  </footer>
+</body>
+</html>
